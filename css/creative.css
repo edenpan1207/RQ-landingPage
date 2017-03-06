@@ -684,11 +684,11 @@ body {
   padding: 10px 10px;
   font-size: 16px;  
   font-weight: bold;
-  background-color: #ddd;
+  background-color: #e7e7e7;
   cursor: pointer;
 }
 .list-group-item h4:hover{
-  background-color: #808080;
+  background-color: #848484;
   color: #fff;
 }
 .list-group-item > ul {
@@ -719,14 +719,18 @@ body {
 }
 
 .contact-footer {
-  font-size: 18px;
-  padding: 20px 0;
+  margin-bottom: 20px;
 }
-.contact-footer > span {
-  display: block;
+.contact-footer > h4 {
+  font-weight: bold;
+  padding-top: 20px;
+  padding-bottom: 5 px;
+}
+.contact-footer > p {
   font-size: 14px;
   width: 80%;
   margin: 0 auto;
+  margin-bottom: 10px;
 }
 
 @media(max-width:568px) {
