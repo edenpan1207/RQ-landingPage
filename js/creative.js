@@ -61,4 +61,11 @@
         }
     });
 
+    $('.list-group-item > ul').hide();
+
+    $('.list-group-item > h4').click(function(){
+        $(this).parent().find('ul').slideToggle();
+        $(this).parent().siblings().find('ul').slideUp();
+    })
+
 })(jQuery); // End of use strict

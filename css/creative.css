@@ -1,10 +1,11 @@
+
 html,
 body {
   height: 100%;
   width: 100%;
 }
 body {
-  font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Microsoft JhengHei', 'Helvetica Neue', Arial, sans-serif;
 }
 hr {
   border-color: #37761D;
@@ -18,11 +19,13 @@ a {
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s;
-  color: #E7F0E9;
+  color: #37761D;
 }
+
+
 a:hover,
 a:focus {
-  color: #37761D !important;
+  color: #37761d !important;
 }
 h1,
 h2,
@@ -42,21 +45,26 @@ p {
   background-color: #37761D !important;
 }
 .bg-dark {
-  background-color: #222222;
+  background-color: #333;
   color: white;
 }
 .text-faded {
   color: rgba(255, 255, 255, 0.7);
 }
 section {
-  padding: 80px 0;
+  padding: 50px 0;
 }
 aside {
   padding: 50px 0;
 }
 .no-padding {
-  padding: 0;
+  padding:0;
 }
+
+.padding-active {
+  padding-bottom: 20px;
+}
+
 .navbar-default {
   background-color: white;
   border-color: rgba(34, 34, 34, 0.05);
@@ -70,7 +78,7 @@ aside {
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
   font-weight: 700;
   font-style: italic;
-  text-transform: uppercase;
+  font-size: 24px;
 }
 .navbar-default .navbar-header .navbar-brand:hover,
 .navbar-default .navbar-header .navbar-brand:focus {
@@ -99,6 +107,7 @@ aside {
 }
 .navbar-default .nav > li.active > a:hover,
 .navbar-default .nav > li.active > a:focus:hover {
+
   background-color: transparent;
 }
 @media (min-width: 768px) {
@@ -127,7 +136,7 @@ aside {
   }
   .navbar-default.affix .navbar-header .navbar-brand {
     color: #37761D !important;
-    font-size: 15px;
+    font-size: 20px;
   }
   .navbar-default.affix .navbar-header .navbar-brand:hover,
   .navbar-default.affix .navbar-header .navbar-brand:focus {
@@ -215,15 +224,17 @@ header .header-content .header-content-inner p {
 .section-heading {
   margin-top: 0;
 }
+
 .service-box {
-  max-width: 400px;
+  width: 88%;
   margin: 50px auto 0;
 }
 @media (min-width: 992px) {
   .service-box {
-    margin: 20px auto 0;
+    margin: 20px auto;
   }
 }
+
 .service-box p {
   margin-bottom: 0;
 }
@@ -332,8 +343,8 @@ fieldset[disabled] .btn-default:active,
 .btn-default.disabled.active,
 .btn-default[disabled].active,
 fieldset[disabled] .btn-default.active {
-  background-color: white;
-  border-color: white;
+  background-color: white !important;
+  border-color: white !important;
 }
 .btn-default .badge {
   color: white;
@@ -445,7 +456,15 @@ body {
   }
 }
 
+@media (max-width:768px) {
+  .brand-title {
+    color: #37761D !important;
+  }
+}
 
+.brand-title {
+  color: #37761D;
+}
 
 .sr-icons {
   color: #37761D !important;
@@ -462,14 +481,36 @@ body {
 .service-box > div > a {
   color: #37761D;
 }
-.item {
-  color: white;
-  padding: 50px 130px;
-  margin: 0 auto; 
+
+.service-box img:hover {
+  opacity: 0.6;
+  transition: 0.5s all;
 }
 
+
 .bg-color {
-  background: #37761D; 
+  background-image: url(../img/curtis-mac-newton-12711.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  -webkit-background-size: center center;
+  background-size: center bottom;
+}
+
+.item {
+  padding:  100px 50px 100px 20px;
+  margin: 0 auto; 
+}
+.item > h3, .item > p {
+  display: inline-block;
+  color: white;
+  opacity: 0.8;
+  background-color: #37761D;
+  padding: 15px;
+}
+
+.slide {
+  width: 100%;
 }
 
 #articles {
@@ -510,12 +551,12 @@ body {
   border-radius: 5px; 
   box-shadow: 0 1px 5px gray;
 }
-.press {
+.btn-press {
   background-color: rgba(55, 118, 29,0.8);
   color: white;
   width: 100%;
 }
-.press:hover {
+.btn-press:hover {
   color: white;
   background-color: rgba(55, 118, 29,1); 
 }
@@ -570,4 +611,126 @@ body {
     display:block !important;
   }
 
+}
+
+.img-size {
+  width: 100%;
+  height: auto;
+}
+
+.coach {
+  padding-bottom: 20px;
+}
+.coach-text {
+  font-size: 14px;
+}
+
+.singleTeam {
+    position: relative;
+    width: 100%;
+}
+
+@media (max-width:768px) {
+  .singleTeam {
+    margin-bottom: 20px;
+  }
+}
+.teamThumb {
+  text-align: center;
+}
+.teamThumb > a > img {
+  display: inline-block;
+  width: 70%;
+  border-radius: 50%;
+}
+.teamThumb > a > img:hover {
+  opacity: 0.6;
+  transition: 0.5s all;
+}
+
+
+.teamDetails {
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    
+}
+
+.teamDetails h3 {
+    font-size:  16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 0.8;
+    margin: 0 0 6px;
+}
+  
+
+.teamDetails span {
+    color: #999;
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    line-height: 20px;
+}
+.list-group-item {
+  padding: 0;
+}
+.list-group-item h4{
+  display: block;
+  margin: 0;
+  margin-bottom: 1px;
+  padding: 10px 10px;
+  font-size: 16px;  
+  font-weight: bold;
+  background-color: #ddd;
+  cursor: pointer;
+}
+.list-group-item h4:hover{
+  background-color: #808080;
+  color: #fff;
+}
+.list-group-item > ul {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.list-group-item .fa-chevron-down {
+  float: right;
+  padding-right: 5px;
+}
+.list-group-item .fa-check {
+  padding-left: 10px;
+  color: rgba(0,0,255,0.5);
+}
+.list-group-item .fa-times {
+  padding-left: 10px;
+  color: rgba(255, 0, 0,0.5);
+}
+.list-group-item .fa-times-circle {
+  padding-left: 5px;
+  color: rgba(255, 0, 0,0.5);
+}
+
+@media (max-width:568px) {
+  .item-none {
+    display: none;
+  }
+}
+
+.contact-footer {
+  font-size: 18px;
+  padding: 20px 0;
+}
+.contact-footer > span {
+  display: block;
+  font-size: 14px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+@media(max-width:568px) {
+  .fb-insert {
+    margin-bottom: 30px;
+  }
 }
