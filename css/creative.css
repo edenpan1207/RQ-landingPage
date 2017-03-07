@@ -492,6 +492,7 @@ body {
   background-size: cover;
   -webkit-background-size: center center;
   background-size: center bottom;
+  background-position: right top;
 }
 
 .item {
