@@ -149,6 +149,8 @@ aside {
     color: #F05F40;
   }
 }
+
+
 header {
   position: relative;
   width: 100%;
@@ -572,8 +574,10 @@ body {
     float:none !important;
   }
 
-  .navbar-toggle{
+  .navbar-toggle{    
     display:block;
+    margin-top: 10px;
+    padding: 6px 20px;
   }
 
   .navbar-collapse{
