@@ -152,18 +152,19 @@ aside {
 
 
 header {
+  background-image: url('../img/index.jpg');
+  background-repeat: no-repeat; 
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   position: relative;
   width: 100%;
   min-height: auto;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  background-image: url('../img/index.jpg');
   text-align: center;
-  color: white;
+  color: #fff;
 }
 header .header-content {
   position: relative;
@@ -527,6 +528,17 @@ body {
   padding-bottom: 20px;
 }
 
+.basicPrice .panel-body h3 {
+  display: inline-block;
+  padding-bottom: 5px;
+  font-size: 16px;
+  border-bottom: 2px solid #fff;
+}
+
+.basicPrice .panel-body span {
+  font-size: 48px;
+}
+
 .vipPrice .panel-body{
   background-color: #1E549F;
   color: #fff;
@@ -536,13 +548,35 @@ body {
   padding-bottom: 20px;
 }
 
+.vipPrice .panel-body h3 {
+  display: inline-block;
+  padding-bottom: 5px;
+  font-size: 16px;
+  border-bottom: 2px solid #fff;
+}
+
+.vipPrice .panel-body span {
+  font-size: 62px;
+}
+
 .vasPrice .panel-body{
   background-color: #081F37;
   color: #fff;
   border-radius:6px 6px 0 0;
   text-align: center; 
   font-size: 18px;
-  padding-bottom: 20px;
+  padding-bottom: 65px;
+}
+
+.vasPrice .panel-body h3 {
+  display: inline-block;
+  padding-bottom: 5px;
+  font-size: 16px;
+  border-bottom: 2px solid #fff;
+}
+
+.vasPrice .panel-body span {
+  font-size: 62px;
 }
 
 .contact-form {
