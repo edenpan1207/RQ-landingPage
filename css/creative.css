@@ -167,7 +167,7 @@ header {
   color: #fff;
 }
 header .header-content {
-  
+  position: relative;
   text-align: center;
   padding: 100px 15px 100px;
   width: 100%;
@@ -195,11 +195,9 @@ header .header-content .header-content-inner p {
   font-size: 16px;
   margin-bottom: 50px;
 }
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   header {
     height: 100%;
-    background-image: url(../img/index.jpg);
-
   }
   header .header-content {
     position: absolute;
@@ -232,7 +230,6 @@ header .header-content .header-content-inner p {
   width: 88%;
   margin: 50px auto 0;
 }
-
 @media (min-width: 992px) {
   .service-box {
     margin: 20px auto;
