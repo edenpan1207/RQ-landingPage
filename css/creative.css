@@ -166,6 +166,7 @@ header {
   text-align: center;
   color: #fff;
 }
+
 header .header-content {
   position: relative;
   text-align: center;
@@ -222,6 +223,13 @@ header .header-content .header-content-inner p {
     margin-right: auto;
   }
 }
+
+@media(max-width:768px) {
+  header {
+    background-attachment: initial;
+  }
+}
+
 .section-heading {
   margin-top: 0;
 }
@@ -757,6 +765,18 @@ body {
 
 .fb-insert {
   margin-top: 20px;
+  text-align: center;
+}
+.fb-insert iframe {
+  height: 300px;
+  border: none;
+  overflow: hidden;
+}
+
+@media(max-width:568px) {
+  .fb-insert iframe {
+   width: 280px;
+  }
 }
 
 .contact-footer {
