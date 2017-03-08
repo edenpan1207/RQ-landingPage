@@ -244,6 +244,12 @@ header .header-content .header-content-inner p {
   }
 }
 
+.text-faded {
+  text-align: left;
+}
+
+
+
 .service-box p {
   margin-bottom: 0;
 }
@@ -573,7 +579,7 @@ body {
   border-radius:6px 6px 0 0;
   text-align: center; 
   font-size: 18px;
-  padding-bottom: 65px;
+  padding-bottom: 45px;
 }
 
 .vasPrice .panel-body h3 {
@@ -733,7 +739,7 @@ body {
   cursor: pointer;
 }
 .list-group-item h4:hover{
-  background-color: #848484;
+  background-color: #9c9c9c;
   color: #fff;
 }
 .list-group-item > ul {
@@ -744,10 +750,7 @@ body {
   float: right;
   padding-right: 5px;
 }
-.list-group-item .fa-check {
-  padding-left: 10px;
-  color: #54b32c;
-}
+
 .list-group-item .fa-times {
   padding-left: 10px;
   color: rgba(255, 0, 0,0.5);
