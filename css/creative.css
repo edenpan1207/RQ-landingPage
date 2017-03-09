@@ -309,6 +309,12 @@
           background-attachment: initial;
       }
   }
+
+  @media(max-width:568px) {
+    header .header-content .header-content-inner h1 {
+      font-size: 30px;
+    }
+  }
   
   .section-heading {
       margin-top: 0;
