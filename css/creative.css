@@ -138,6 +138,8 @@
       }
       .navbar-default.affix .navbar-header .navbar-brand {
           color: #37761D;
+          font-size: 1.6em;
+          font-weight: bold;
       }
 
       .navbar-default .navbar-header .navbar-brand:hover,
