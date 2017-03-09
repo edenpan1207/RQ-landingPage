@@ -85,20 +85,20 @@
   }
   
   .navbar-default .navbar-header .navbar-brand {
-      color: #F05F40;
+      color: #fff;
       font-weight: 700;
       font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;
       font-style: italic;
       font-style: oblique;
       font-size: 1.8em;
   }
+  
   /*
   .navbar-default .navbar-header .navbar-brand:hover,
   .navbar-default .navbar-header .navbar-brand:focus {
-    color: #eb3812 !important;
-    background-color:#eb3812 !important; 
-  }*/
-  
+    color: ; 
+  }
+  */
   .navbar-default .navbar-header .navbar-toggle {
       font-weight: 700;
       font-size: 12px;
@@ -136,12 +136,13 @@
           background-color: transparent;
           border-color: rgba(255, 255, 255, 0.3);
       }
-      .navbar-default .navbar-header .navbar-brand {
-          color: rgba(255, 255, 255, 0.7) !important;
+      .navbar-default.affix .navbar-header .navbar-brand {
+          color: #37761D;
       }
+
       .navbar-default .navbar-header .navbar-brand:hover,
       .navbar-default .navbar-header .navbar-brand:focus {
-          color: rgba(255, 255, 255, 1) !important;
+          color: rgba(255, 255, 255, 1);
       }
       .navbar-default .nav > li > a,
       .navbar-default .nav > li > a:focus {
@@ -174,7 +175,7 @@
       .navbar-header {
           float: none;
       }
-      .navbar-default .navbar-header .navbar-brand {
+     .navbar-default .navbar-header .navbar-brand {
           color: #37761D;
       }
       .navbar-left,
@@ -570,7 +571,7 @@
           padding: 15px 30px;
       }
   }
-  
+  /*
   @media (max-width:768px) {
       .brand-title {
           color: #37761D !important;
@@ -580,7 +581,7 @@
   .brand-title {
       color: #37761D;
   }
-  
+  */
   .sr-icons {
       color: #37761D !important;
   }
