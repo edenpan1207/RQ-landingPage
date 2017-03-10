@@ -747,10 +747,17 @@
       width: 100%;
   }
   
-  @media (max-width:768px) {
+  @media(max-width:768px) {
       .singleTeam {
           margin-bottom: 20px;
       }
+  }
+
+  @media(max-width:552px) {
+    .singleTeam {
+      height: 205px;
+
+    }
   }
   
   .teamThumb {
