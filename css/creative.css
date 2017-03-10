@@ -880,12 +880,25 @@
       margin-bottom: 30px;
   }
   
-  .contact-footer > a > img {
-      padding-right: 10px;
+  .flipInX > a > img {
+    margin-right: 10px;
   }
+
+  .flipInX > a > img:hover {
+    border-radius: 100%;
+    box-shadow: 0px 5px 8px gray;
+  }
+
+  .contact-footer > a > img:active {
+  transform: translateY(4px); 
+  box-shadow: 0px 1px 8px gray;
+  }
+
   
+
   @media(max-width:568px) {
       .fb-insert {
           margin-bottom: 30px;
       }
   }
+
