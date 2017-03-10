@@ -18,7 +18,7 @@
         event.preventDefault();
     });
 
-    
+
     // Highlight the top nav as scrolling occurs
     $('body').scrollspy({
         target: '.navbar-fixed-top',
@@ -54,9 +54,12 @@
         scale: 0.3,
         distance: '0px'
     }, 300);
+    sr.reveal('.sr-coach', { 
+        duration: 600 
+    }, 50);
 
     // Initialize and Configure Magnific Popup Lightbox Plugin
-    $('.popup-gallery').magnificPopup({
+   /* $('.popup-gallery').magnificPopup({
         delegate: 'a',
         type: 'image',
         tLoading: 'Loading image #%curr%...',
@@ -69,10 +72,10 @@
         image: {
             tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
         }
-    });
+    });*/
 
     $('.list-group-item > ul').hide();
-    $('.list-group-item > h4').click(function(){
+    $('.list-group-item > h4').click(function() {
         $(this).parent().find('ul').slideToggle();
         $(this).parent().siblings().find('ul').slideUp();
     })
